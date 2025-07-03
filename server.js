@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: '*' }));
 
 // Seu token da Pushin Pay
 const PUSHINPAY_TOKEN = '36539|loe6HF1qlPYAQtM3nRCO7ApFbH2y3PmNk4G2ld9La4aa7117';
